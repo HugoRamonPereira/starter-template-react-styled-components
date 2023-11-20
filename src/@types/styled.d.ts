@@ -5,7 +5,7 @@ import { globalTheme } from '../styles/theme/globalTheme';
 type ThemeType = typeof globalTheme;
 
 declare module 'styled-components' {
-  export interface DefaultTheme extends ThemeType{}
+  export interface DefaultTheme extends ThemeType {}
 }
 
 // This file was added to the project because Styled-Components is not able
