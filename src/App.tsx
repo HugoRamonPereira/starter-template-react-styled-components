@@ -1,13 +1,14 @@
+import { ThemeProvider } from 'styled-components';
 import { Button } from './components/button';
-import Theme from './styles/theme/globalTheme';
+import { globalTheme } from './styles/theme/globalTheme';
 
 function App() {
 
   return (
-    <Theme>
+    <ThemeProvider theme={globalTheme}>
       <h1>Starter Template React + Styled Components</h1>
       <Button />
-    </Theme>
+    </ThemeProvider>
   );
 }
 
