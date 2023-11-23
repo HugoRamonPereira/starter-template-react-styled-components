@@ -1,14 +1,13 @@
 import { ThemeProvider } from 'styled-components';
-import { Button } from './components/button';
-import { globalTheme } from './styles/theme/globalTheme';
+import { GlobalStyle } from './styles/styles';
+import theme from './styles/theme';
+import { Router } from './Router';
 
-function App() {
+export default function App() {
   return (
-    <ThemeProvider theme={globalTheme}>
-      <h1>Starter Template React + Styled Components</h1>
-      <Button />
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Router />
     </ThemeProvider>
   );
 }
-
-export default App;
